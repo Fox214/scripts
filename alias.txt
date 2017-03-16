@@ -186,6 +186,7 @@ alias snk input /ma "Sneak" <me>
 alias invis input /ma "Invisible" <me>
 alias do input /ma "Deodorize" <me>
 alias jig input /ja "Chocobo Jig" <me>
+alias sjig input /ja "Spectral Jig" <me>
 alias stun input /ma "Stun" <t>
 alias rr input /ma "Reraise" <me>
 alias rr2 input /ma "Reraise II" <me>
@@ -205,7 +206,6 @@ alias av input /ma "Aquaveil" <me>
 
 
 //misc
-alias mb gs c toggle MagicBurst
 alias siphon gs c siphon
 alias dummy gs c set ExtraSongsMode Dummy
 alias th gs c cycle treasuremode
@@ -214,6 +214,20 @@ alias gear gs org
 alias validate gs validate
 alias cp input /equip Back "Mecisto. Mantle"
 alias trusts exec trusts.txt
+
+//element mode - this defaults certain actions to an element
+alias em gs c cycle ElementMode
+alias emdark gs c set ElementMode dark
+alias emlight gs c set ElementMode light
+alias emwind gs c set ElementMode wind
+alias emearth gs c set ElementMode earth
+alias emthunder gs c set ElementMode thunder
+alias emwater gs c set ElementMode water
+alias emfire gs c set ElementMode fire
+alias emice gs c set ElementMode ice
+alias helix gs c useElement helix
+alias nuke gs c useElement nuke
+alias storm gs c useElement storm
 
 //spells
 alias a1 input /ma "Aero" <t>
@@ -297,3 +311,5 @@ alias wja input /ma "Waterja" <t>
 
 alias mlo input exec mlo.txt
 alias nto input exec nto.txt
+
+alias wbuffs exec whmbuffs.txt
